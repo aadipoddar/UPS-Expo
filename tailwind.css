@@ -2,19 +2,55 @@
   position: fixed
 }
 
+.absolute {
+  position: absolute
+}
+
 .relative {
   position: relative
+}
+
+.block {
+  display: block
+}
+
+.inline {
+  display: inline
 }
 
 .flex {
   display: flex
 }
 
+.contents {
+  display: contents
+}
+
 .hidden {
   display: none
+}
+
+.border {
+  border-width: 1px
+}
+
+.uppercase {
+  text-transform: uppercase
+}
+
+.capitalize {
+  text-transform: capitalize
+}
+
+.italic {
+  font-style: italic
 }
 
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity))
+}
+
+.underline {
+  text-decoration-line: underline
 }

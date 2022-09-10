@@ -7,7 +7,7 @@ const CustomersScreen = () => {
 
     return (
         <SafeAreaView>
-            <Text style={tw('text-red-500')}>CustomersScreen</Text>
+            <Text style={tw('text-red-500')}>This is Customers Screen!</Text>
         </SafeAreaView>
     )
 }
