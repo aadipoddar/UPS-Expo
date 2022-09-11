@@ -1,0 +1,34 @@
+type Items {
+  item_id: Int
+  name: String
+  price: Float
+  quantity: Int
+}
+
+type TrackingItems {
+  customer_id: String
+  items: [Items]
+  customer: Customer
+    @materializer(
+      query: "getCustomerById"
+      arguments: [{ name: "id", field: "customer_id" }]
+    )
+}
+
+type TrackingItemsList {
+  name: ID
+  value: TrackingItems
+}
+
+type Query {
+  getTrackingItemById(id: ID!): TrackingItems
+    @rest(
+      endpoint: "https://ups-expo-8e2d6-default-rtdb.asia-southeast1.firebasedatabase.app/trackingItems/$id.json"
+    )
+
+  getTrackingItems: [TrackingItemsList]
+    @rest(
+      endpoint: "https://ups-expo-8e2d6-default-rtdb.asia-southeast1.firebasedatabase.app/trackingItems.json"
+      transforms: [{ pathpattern: [], editor: "objectToArray" }]
+    )
+}
