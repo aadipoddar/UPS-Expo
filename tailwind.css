@@ -1,3 +1,7 @@
+.static {
+  position: static
+}
+
 .fixed {
   position: fixed
 }
@@ -22,16 +26,42 @@
   display: flex
 }
 
-.contents {
-  display: contents
-}
-
 .hidden {
   display: none
 }
 
+.h-64 {
+  height: 16rem
+}
+
+.w-full {
+  width: 100%
+}
+
 .border {
   border-width: 1px
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+}
+
+.p-2 {
+  padding: 0.5rem
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem
+}
+
+.pt-5 {
+  padding-top: 1.25rem
+}
+
+.pb-0 {
+  padding-bottom: 0px
 }
 
 .uppercase {
@@ -40,17 +70,4 @@
 
 .capitalize {
   text-transform: capitalize
-}
-
-.italic {
-  font-style: italic
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity))
-}
-
-.underline {
-  text-decoration-line: underline
 }
