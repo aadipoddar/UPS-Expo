@@ -1,15 +1,15 @@
-import { Text } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { useTailwind } from 'tailwind-rn/dist'
+import { Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { useTailwind } from "tailwind-rn/dist";
 
 const CustomersScreen = () => {
-    const tw = useTailwind()
+  const tw = useTailwind();
 
-    return (
-        <SafeAreaView>
-            <Text style={tw('text-red-500')}>This is Customers Screen!</Text>
-        </SafeAreaView>
-    )
-}
+  return (
+    <SafeAreaView>
+      <Text style={tw("text-red-500")}>This is Customers Screen!</Text>
+    </SafeAreaView>
+  );
+};
 
-export default CustomersScreen
+export default CustomersScreen;
