@@ -5,7 +5,10 @@ import RootNavigator from "./navigator/RootNavigator";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "http://localhost:5001/expo/ups",
+  uri: "https://hoogstraten.stepzen.net/expo/ups/__graphql",
+  headers: {
+    Authorization: `Apikey hoogstraten::stepzen.net+1000::c6678c391abfe12fab0fff4041aec05917c63d4f865217c4f30930bf5afec7af`,
+  },
   cache: new InMemoryCache(),
 });
 
