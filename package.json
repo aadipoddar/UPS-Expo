@@ -19,6 +19,7 @@
     "@rneui/themed": "^0.0.0-edge.2",
     "expo": "~46.0.9",
     "expo-status-bar": "~1.4.0",
+    "expo-updates": "~0.14.5",
     "graphql": "^16.6.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
